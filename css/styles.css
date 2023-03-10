@@ -1,5 +1,5 @@
 :root {
-    --primary-orange: orangered;
+    --primary-orange: #C42021;
 } 
  
  * {
@@ -10,6 +10,8 @@
 
 body {
     overflow-x: hidden;
+    font-family: 'Nanum Myeongjo', serif;
+    width: auto; 
 }
 
 .nav-link {
@@ -56,12 +58,18 @@ body {
 
 .orange-heading {
     color: orangered;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+}
+
+.orange-text {
+    color: orangered;
 }
 
 .white-heading {
     color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+}
+
+i {
+    margin-left: 10px;
 }
 
 .list-heading  {
@@ -113,10 +121,6 @@ body {
     background-color: rgb(241, 240, 240) !important;
 }
 
-.services-heading {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
-}
-
 .fourth-banner {
     padding: 50px 0;
     background-color: rgb(241, 240, 240) !important;
@@ -138,6 +142,178 @@ body {
 .card {
     width: 350px !important;
 }
+
+.blue-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-left: 30px;
+    width: 235px;
+    height: 235px;
+    background-color: rgb(51, 45, 86) !important;
+    transform: rotate(45deg);
+}
+
+.red-box {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    width: 235px;
+    height: 235px;
+    background-color: #DB504A !important;
+    transform: rotate(45deg);
+}
+
+.blue-box2 {
+    transform: rotate(315deg);
+    width: 300px;
+}
+.red-box2 {
+    transform: rotate(315deg);
+    width: 300px;
+    margin-top: 40px !important;
+}
+.blue-box2 p {
+    width: 250px;
+    transform: translatex(-30px);
+}
+.red-box2 p {
+    width: 250px;
+    transform: translatex(-30px);
+}
+
+/* .image-hr {
+    text-align: center;
+    width: 100%;
+    display: block;
+} */
+
+.blue-box2:last-child {
+    color: white;
+    margin-top: 20px;
+    margin-right: 100px;
+}
+
+.red-box2:last-child {
+    color: white;
+    margin-top: 20px;
+    margin-right: 100px;
+}
+
+.img-box {
+    display: block;
+    margin-left: 100px;
+    margin-bottom: 60px;
+
+}
+.img-box2 {
+    display: block;
+    margin-left: 76px;
+}
+
+.line {
+    display: block;
+    margin-top: 20px;
+    padding-right: 50px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+
+.model-card {
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 480vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+    display: none;
+}
+
+#display {
+    display: none;
+    color: white;
+}
+
+.model {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 400px; 
+    height: 250px;
+    background: rgb(145, 192, 223);
+    background: linear-gradient(90deg, rgba(238, 174, 202, 1) 4%, rgba(191, 148, 233, 1) 100%);
+    border-radius: 15px;
+    box-shadow: 12px 13px 21px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 12px 13px 21px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 12px 13px 21px -1px rgba(0,0,0,0.75);
+    padding: 60px 50px;
+    z-index: 99999;
+    top: 1000px;
+    left: 30px;
+}
+
+.model-heading {
+    color: white;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.model-text {
+    width: 400px;
+    color: white;
+    text-align: center;
+}
+
+.model-img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.model-email {
+    margin-top: 15px;
+    height: 30px;
+    width: 250px;
+    outline: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.model-email::placeholder {
+    text-indent: 10px;
+}
+
+.model-submit {
+    border: none;
+    width: 120px;
+    color: white;
+    margin-top: 10px;
+    background: rgb(184, 2, 184); 
+    padding: 7px 20px;
+    display: block;
+    font-weight: 500;
+    border-radius: 20px;
+}
+
+.exit {
+    position: absolute;
+    top: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    right: 10px;
+    color: purple;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 650px) {
