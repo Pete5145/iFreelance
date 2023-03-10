@@ -19,9 +19,7 @@ window.addEventListener("scroll", (e) => {
         modalBox.style.display = "none";
     })
 
-submitBtn.addEventListener("click", (e) => {
+submitBtn.addEventListener("click", (e) => { 
     e.preventDefault();  
-    modal.innerHTML = " ";
-    display.style.display = "block";
-    display.innerHTML = "Thanks for subscribing to our newsletter!"
-});
+    modal.innerHTML = "<h5 style='color: white'>Thanks for subscribing to our newsletter!</h5>";  
+}); 
