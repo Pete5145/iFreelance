@@ -18,8 +18,8 @@ window.addEventListener("scroll", (e) => {
     closeBtn.addEventListener("click", () => {
         modalBox.style.display = "none";
     })
-
-submitBtn.addEventListener("click", (e) => { 
-    e.preventDefault();  
+    
+    submitBtn.addEventListener("click", (e) => { 
+        e.preventDefault();  
     modal.innerHTML = "<h5 style='color: white'>Thanks for subscribing to our newsletter!</h5>";  
 }); 

@@ -31,7 +31,7 @@ body {
 
 .first-banner {
     position: relative;
-    background-image: url(/images/bg.jpg);
+    background-image: url(images/bg.jpg);
     height: 500px;
     display: flex;
     align-items: center;
